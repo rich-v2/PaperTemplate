@@ -1,0 +1,171 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Placeholder},
+  pdfauthor={Richard Winter},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+\newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{A\arabic{table}}     \setcounter{figure}{0} \renewcommand{\thefigure}{A\arabic{figure}}}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{afterpage}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{footmisc}
+\usepackage{pdflscape}
+\usepackage{subfig}
+\usepackage{siunitx}
+\usepackage{subfiles}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Placeholder\footnote{We thank Richard for providing us with this neat template.}}
+\author{Richard Winter\footnote{University of Mannheim, \href{mailto:r.winter@uni-mannheim.de}{\nolinkurl{r.winter@uni-mannheim.de}}}}
+\date{2022-07-27}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Abstract goes here.
+\end{abstract}
+
+\newpage
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+Lorem ipsum dolor sit amet, ut ultrices aenean nibh nisl nec augue. Tempus ante nec enim erat sed curabitur egestas curabitur a cras, amet lacinia. Pellentesque at tristique accumsan primis at ut diam eleifend tempus et. Et ut magna massa neque at felis, vulputate risus nisi vehicula tempor. Velit, proin ante ac nulla cursus eu risus tristique. Tortor in velit amet libero, himenaeos nulla nullam. Cubilia platea metus lorem gravida, tincidunt tempor. Nisi augue ligula finibus sed duis. In potenti mi fermentum parturient vestibulum dictum nullam cras et. Eu ac urna rhoncus volutpat tempus a orci nisi faucibus. Lobortis id eros at vestibulum vulputate tellus est. Vulputate, elit risus dictum, nascetur. Himenaeos sed at sed mus ac nec. Pulvinar ultricies lobortis urna, sit sollicitudin pellentesque sem. Sed erat etiam facilisis cubilia fermentum eget ac eu. Maximus congue varius non in dolor. Arcu nunc porttitor quam amet. Nisl felis eu risus. Pretium fames pharetra morbi sapien aenean scelerisque facilisi donec, torquent. Egestas quam urna odio fringilla donec sed, velit. Fermentum nunc consequat nulla eu vitae quisque nisi accumsan tellus varius cras consequat arcu. Sit vel urna sem, odio himenaeos. Sit, purus eget odio, ex dignissim quis facilisi posuere. Porttitor, faucibus, vel turpis, sit. Rutrum aliquam, scelerisque, varius auctor suscipit ultrices phasellus vel leo, sapien arcu. Lacinia varius quis elementum mollis arcu sed ad. Quis curabitur quisque et quis suscipit sapien massa aliquam. Et pretium, suspendisse sit, vestibulum metus integer. Tellus praesent hendrerit ipsum, lacus id sollicitudin ullamcorper consequat erat eros suspendisse eget. Neque nunc est convallis turpis ligula justo ex suspendisse nostra volutpat. Eu bibendum, in vel. Pellentesque id ut sem penatibus amet. Faucibus tempus eleifend et nec pellentesque mollis nascetur lacus ante nam integer, facilisi luctus. Phasellus sed sagittis phasellus sed ac. Torquent non hendrerit ac curabitur nec, ante vel, integer. Fusce feugiat vehicula et vitae habitant. Augue, sit aenean in porttitor amet. Nulla tempor faucibus tempor nibh ac vel. Sociosqu sed turpis nascetur sit curae sapien sit. Et, primis eget blandit sed blandit tempus, bibendum ut. Nibh pellentesque malesuada torquent. Arcu ut in enim eget erat. Elit in nibh quis eleifend natoque vestibulum cum. Condimentum eu laoreet elementum convallis ipsum donec curabitur nec neque. Platea, pellentesque purus elementum posuere ex. Id lorem phasellus at feugiat convallis. Euismod a. Dapibus in, dui ad nec maximus ut nibh class aliquam suscipit. Quisque eros finibus, nulla libero quisque nec cum. Sed metus cras ullamcorper aliquam suscipit gravida ipsum magna aliquet id. Cubilia nunc viverra ante tempor imperdiet, dapibus eget in, pharetra elit sed integer. Consectetur in facilisi laoreet libero. Ac a porttitor mauris sed aliquet ante eu tincidunt, ex at porttitor nostra a in a amet. Rhoncus lectus porttitor sed donec dapibus scelerisque vivamus, faucibus. Adipiscing imperdiet, et luctus purus commodo aliquet taciti, tempus ornare gravida. Id a tortor. Potenti nulla pellentesque montes vivamus nec eleifend egestas inceptos.
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\clearpage
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\beginsupplement
+
+\hypertarget{additional-tables-and-figures}{%
+\section{Additional Tables and Figures}\label{additional-tables-and-figures}}
+
+\end{document}

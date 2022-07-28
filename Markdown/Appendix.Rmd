@@ -1,0 +1,31 @@
+---
+title: "Appendix"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_document2:
+    extra_dependencies: ["amssymb",	"amsmath", "amsfonts", "afterpage", "array", "booktabs", "eurosym", "geometry", "float", "graphicx", "hyperref", "longtable", "caption", "color", "setspace", "comment", "footmisc", "caption", "pdflscape", "subfig", "siunitx", "subfiles"]
+    keep_tex: true
+    toc: false
+bibliography: "bibliography.bib"
+biblio-style: "apalike"
+link-citations: true
+fontsize: 12pt
+linkcolor: blue
+header-includes:
+  - |
+    ```{=latex}
+    \newtheorem{theorem}{Theorem}
+    \newtheorem{corollary}[theorem]{Corollary}
+    \newtheorem{proposition}{Proposition}
+    \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+    \newtheorem{hyp}{Hypothesis}
+    \newtheorem{subhyp}{Hypothesis}[hyp]
+    \renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+    \newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{A\arabic{table}}     \setcounter{figure}{0} \renewcommand{\thefigure}{A\arabic{figure}}}
+    ```
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+

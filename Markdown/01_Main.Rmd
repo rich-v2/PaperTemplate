@@ -1,0 +1,156 @@
+---
+title: Placeholder^[We thank Richard for providing us with this neat template.]
+author:
+  - Richard Winter^[University of Mannheim, r.winter@uni-mannheim.de]
+date: "`r Sys.Date()`"
+abstract: "Abstract goes here."
+output:
+  bookdown::pdf_document2:
+    extra_dependencies: ["amssymb",	"amsmath", "amsfonts", "afterpage", "array", "booktabs", "eurosym", "geometry", "float", "graphicx", "hyperref", "longtable", "caption", "color", "setspace", "comment", "footmisc", "caption", "pdflscape", "subfig", "siunitx", "subfiles"]
+    keep_tex: true
+    toc: false
+bibliography: "bibliography.bib"
+biblio-style: "apalike"
+link-citations: true
+fontsize: 12pt
+linkcolor: blue
+header-includes:
+  - |
+    ```{=latex}
+    \newtheorem{theorem}{Theorem}
+    \newtheorem{corollary}[theorem]{Corollary}
+    \newtheorem{proposition}{Proposition}
+    \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+    \newtheorem{hyp}{Hypothesis}
+    \newtheorem{subhyp}{Hypothesis}[hyp]
+    \renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+    \newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{A\arabic{table}}     \setcounter{figure}{0} \renewcommand{\thefigure}{A\arabic{figure}}}
+    ```
+---
+
+\newpage
+
+<!-- Regarding the YAML Header 
+
+^This is how you comment in Rmarkdown btw. Use Ctr + Shift + C on a selection to comment out.
+
+There are more fields you can use to adjust certain aspects of the paper. For me, the ones specified sufficed.
+
+Note that the YAML (language?) is quite sensitive to indentations. Don't start a new line for no reason and make sure that nested key:value pairs are correctly aligned.
+
+For a paper I use the bookdown package and the pdf_document2 document format, as it allows me to cross-reference figures and tables, which is not a feature of default rmarkdown.
+
+For knitting, I also use the tinytex package, worked better for me than the default LaTeX distribution. Might not be the same experience for you, but I read somewhere that it was highly recommended.
+
+Bibliography file should be a bib file like you would use with biber LaTeX.
+
+extra_dependencies: List type value where you just give the names of the additional LaTeX packages you would like to use. I haven't checked which ones pandoc or whoever runs this in the background includes some of them already by default, some might be reduntant, some you may not need. Adjust at your own discretion.
+
+header-includes allows you to add additional LaTeX code to the preamble. I remember there was something problematic here if you intend to produce multiple output formats, maybe I should check that again. There is also the includes: in-header/in_header variant. One of them only works for pdf document, the other is included in every output format.
+
+-->
+
+<!-- First Time
+
+First knit attempt might take a while, because tinytex needs to install the packages first.
+
+-->
+
+<!-- Set Paths and Globals 
+
+I recommend setting the code-chunk default directory to your Project directory
+
+Go to Tools > Global Options > Rmarkdown and change Evaluate chunks in directory: Project
+
+-->
+
+```{r, include=F}
+root <- "C:/Users/Richard Winter/Dropbox/R/PaperTemplate/"
+# Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
+
+# Some code chunk options you may want to adjust
+knitr::opts_chunk$set(
+  echo=F, # Print code in your document
+  message = F, # If functions throw a message like "successfully loaded" or something
+  warning = F, # For stuff like NAs introduced by coercion
+  fig.pos = "H", # Here you can set LaTex float specifiers
+  fig.align='center') # Figure alignment --> I don't really get how this works for LaTeX documents. Sometimes it works, sometimes not so much
+
+# Some knitting options you may want to adjust
+knitr::opts_knit$set(
+  root.dir= root # normally, the root directory of a markdown document is the directory where the markdown file is located
+                   # If you want to work with relative paths and not get confused by anything, you might want to set this to your project directory every time
+  )
+```
+
+<!-- Load Libraries -->
+
+```{r}
+source("./Scripts/libraries.R")
+```
+
+<!-- Define Functions -->
+
+```{r}
+source("./Scripts/functions.R")
+```
+
+
+# Introduction{#intro}
+
+```{r, child = './Markdown/02_Introduction.Rmd'}
+
+```
+
+# Instituional Background{#inst}
+
+```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+
+```
+
+# Data{#data}
+
+```{r, child = './Markdown/04_Data.Rmd'}
+
+```
+
+# Data{#data}
+
+```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+
+```
+
+# Empirical Strategy{#strat}
+
+```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+
+```
+
+# Instituional Background{#inst}
+
+```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+
+```
+
+# References{-}
+
+<!-- References
+
+
+-->
+
+<div id="refs"></div>
+
+\clearpage
+
+# (APPENDIX) Appendix {-}
+
+\beginsupplement
+
+# Additional Tables and Figures
+
+```{r, child="./Markdown/Appendix.Rmd"}
+
+```
+
+
