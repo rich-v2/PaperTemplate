@@ -25,8 +25,8 @@ header-includes:
     ```
 ---
 
-```{r, include=F}
-root <- "C:/Users/Richard Winter/Dropbox/R/PaperTemplate/"
+```{r, include=F, eval=F}
+root <- "../"
 # Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
 
 # Some code chunk options you may want to adjust
@@ -43,3 +43,31 @@ knitr::opts_knit$set(
                    # If you want to work with relative paths and not get confused by anything, you might want to set this to your project directory every time
   )
 ```
+
+```{r, results='asis'}
+stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
+```
+
+Example for a graph with subplots.
+
+```{r example-plot, fig.cap = "Example Graph with subplots", fig.subcap=c("First Graph","Second Graph"), fig.ncol=2, out.width="50%"}
+ggplot(mtcars, aes(mpg,disp,color=factor(cyl))) +
+  geom_point() + 
+  labs(x="Miles per Gallon",
+       y="Engine Displacement",
+       color="Cylinders") +
+  theme_bw()
+
+ggplot(mtcars, aes(factor(gear))) +
+  geom_bar(color="darkblue") + 
+  labs(x="Gears",
+       y="Count") +
+  theme_bw()
+```
+
+Example for a regression table
+
+```{r example-table}
+msummary(ols_reg)
+```
+

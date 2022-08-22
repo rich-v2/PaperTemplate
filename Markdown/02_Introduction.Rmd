@@ -26,7 +26,7 @@ header-includes:
 ---
 
 ```{r, include=F, eval=F}
-root <- "C:/Users/Richard Winter/Dropbox/R/PaperTemplate/"
+root <- "../"
 # Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
 
 # Some code chunk options you may want to adjust
@@ -55,7 +55,10 @@ Cross-referencing across sections might not work, only if you knit the entire do
 
 -->
 
+This is an example for a citation using citeproc^[cf. @doerrenberg2013progressive.]
+
 ```{r, results='asis'}
-stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
+
++stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
 ```
 

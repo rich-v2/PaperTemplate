@@ -65,7 +65,7 @@ Go to Tools > Global Options > Rmarkdown and change Evaluate chunks in directory
 -->
 
 ```{r, include=F}
-root <- "C:/Users/Richard Winter/Dropbox/R/PaperTemplate/"
+root <- "../"
 # Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
 
 # Some code chunk options you may want to adjust
@@ -83,52 +83,87 @@ knitr::opts_knit$set(
   )
 ```
 
+<!-- Conditional Code Execution 
+
+Some Code might take significant time to run through. I'd recommend putting this in an auxiliary script and only executing it if necessary.
+
+One approach to this end is to add additional booleans for conditional code execution.
+
+-->
+
+```{r bools}
+analysis <- T
+```
+
+
 <!-- Load Libraries -->
 
-```{r}
+```{r load-libraries}
 source("./Scripts/libraries.R")
 ```
 
 <!-- Define Functions -->
 
-```{r}
+```{r load-functions}
 source("./Scripts/functions.R")
 ```
 
 
 # Introduction{#intro}
 
-```{r, child = './Markdown/02_Introduction.Rmd'}
+```{r knit-intro, child = './Markdown/02_Introduction.Rmd'}
 
 ```
 
 # Instituional Background{#inst}
 
-```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+```{r knit-inst, child = './Markdown/03_InstitutionalBackground.Rmd'}
 
 ```
 
 # Data{#data}
 
-```{r, child = './Markdown/04_Data.Rmd'}
-
-```
-
-# Data{#data}
-
-```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+```{r knit-data, child = './Markdown/04_Data.Rmd'}
 
 ```
 
 # Empirical Strategy{#strat}
 
-```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+```{r knit-strat, child = './Markdown/05_EmpiricalStrategy.Rmd'}
 
 ```
 
-# Instituional Background{#inst}
+# Results{#res}
 
-```{r, child = './Markdown/03_InstitutionalBackground.Rmd'}
+<!-- Run lengthy analysis -->
+
+```{r run-analysis, eval = analysis}
+source("./Scripts/analysis.R")
+```
+
+
+<!-- If analysis was already performed, as indicated by the analysis variable set above, just load the results -->
+
+```{r load-analysis}
+if(!analysis){
+  load("./Data/analysis.Rdata")
+}
+```
+
+
+```{r knit-results, child = './Markdown/06_Results.Rmd'}
+
+```
+
+# Discussion{#discussion}
+
+```{r knit-discussion, child = './Markdown/07_Discussion.Rmd'}
+
+```
+
+# Conclusion{#conclusion}
+
+```{r knit-conclusion, child = './Markdown/08_Conclusion.Rmd'}
 
 ```
 

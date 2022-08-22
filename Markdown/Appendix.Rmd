@@ -25,7 +25,23 @@ header-includes:
     ```
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include=F, eval=F}
+root <- "../"
+
+# Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
+
+# Some code chunk options you may want to adjust
+knitr::opts_chunk$set(
+  echo=F, # Print code in your document
+  message = F, # If functions throw a message like "successfully loaded" or something
+  warning = F, # For stuff like NAs introduced by coercion
+  fig.pos = "H", # Here you can set LaTex float specifiers
+  fig.align='center') # Figure alignment --> I don't really get how this works for LaTeX documents. Sometimes it works, sometimes not so much
+
+# Some knitting options you may want to adjust
+knitr::opts_knit$set(
+  root.dir= root # normally, the root directory of a markdown document is the directory where the markdown file is located
+                   # If you want to work with relative paths and not get confused by anything, you might want to set this to your project directory every time
+  )
 ```
 

@@ -25,8 +25,9 @@ header-includes:
     ```
 ---
 
-```{r, include=F}
-root <- "C:/Users/Richard Winter/Dropbox/R/PaperTemplate/"
+```{r, include=F, eval=F}
+root <- "../"
+
 # Code chunk option include=F means that the code will not be included in the document and only the side effects will remain
 
 # Some code chunk options you may want to adjust

@@ -35,18 +35,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Placeholder},
-  pdfauthor={Richard Winter},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
@@ -131,10 +119,22 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Placeholder},
+  pdfauthor={Richard Winter},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Placeholder\footnote{We thank Richard for providing us with this neat template.}}
 \author{Richard Winter\footnote{University of Mannheim, \href{mailto:r.winter@uni-mannheim.de}{\nolinkurl{r.winter@uni-mannheim.de}}}}
-\date{2022-07-27}
+\date{2022-07-29}
 
 \begin{document}
 \maketitle
@@ -147,14 +147,56 @@ Abstract goes here.
 \hypertarget{intro}{%
 \section{Introduction}\label{intro}}
 
-Lorem ipsum dolor sit amet, ut ultrices aenean nibh nisl nec augue. Tempus ante nec enim erat sed curabitur egestas curabitur a cras, amet lacinia. Pellentesque at tristique accumsan primis at ut diam eleifend tempus et. Et ut magna massa neque at felis, vulputate risus nisi vehicula tempor. Velit, proin ante ac nulla cursus eu risus tristique. Tortor in velit amet libero, himenaeos nulla nullam. Cubilia platea metus lorem gravida, tincidunt tempor. Nisi augue ligula finibus sed duis. In potenti mi fermentum parturient vestibulum dictum nullam cras et. Eu ac urna rhoncus volutpat tempus a orci nisi faucibus. Lobortis id eros at vestibulum vulputate tellus est. Vulputate, elit risus dictum, nascetur. Himenaeos sed at sed mus ac nec. Pulvinar ultricies lobortis urna, sit sollicitudin pellentesque sem. Sed erat etiam facilisis cubilia fermentum eget ac eu. Maximus congue varius non in dolor. Arcu nunc porttitor quam amet. Nisl felis eu risus. Pretium fames pharetra morbi sapien aenean scelerisque facilisi donec, torquent. Egestas quam urna odio fringilla donec sed, velit. Fermentum nunc consequat nulla eu vitae quisque nisi accumsan tellus varius cras consequat arcu. Sit vel urna sem, odio himenaeos. Sit, purus eget odio, ex dignissim quis facilisi posuere. Porttitor, faucibus, vel turpis, sit. Rutrum aliquam, scelerisque, varius auctor suscipit ultrices phasellus vel leo, sapien arcu. Lacinia varius quis elementum mollis arcu sed ad. Quis curabitur quisque et quis suscipit sapien massa aliquam. Et pretium, suspendisse sit, vestibulum metus integer. Tellus praesent hendrerit ipsum, lacus id sollicitudin ullamcorper consequat erat eros suspendisse eget. Neque nunc est convallis turpis ligula justo ex suspendisse nostra volutpat. Eu bibendum, in vel. Pellentesque id ut sem penatibus amet. Faucibus tempus eleifend et nec pellentesque mollis nascetur lacus ante nam integer, facilisi luctus. Phasellus sed sagittis phasellus sed ac. Torquent non hendrerit ac curabitur nec, ante vel, integer. Fusce feugiat vehicula et vitae habitant. Augue, sit aenean in porttitor amet. Nulla tempor faucibus tempor nibh ac vel. Sociosqu sed turpis nascetur sit curae sapien sit. Et, primis eget blandit sed blandit tempus, bibendum ut. Nibh pellentesque malesuada torquent. Arcu ut in enim eget erat. Elit in nibh quis eleifend natoque vestibulum cum. Condimentum eu laoreet elementum convallis ipsum donec curabitur nec neque. Platea, pellentesque purus elementum posuere ex. Id lorem phasellus at feugiat convallis. Euismod a. Dapibus in, dui ad nec maximus ut nibh class aliquam suscipit. Quisque eros finibus, nulla libero quisque nec cum. Sed metus cras ullamcorper aliquam suscipit gravida ipsum magna aliquet id. Cubilia nunc viverra ante tempor imperdiet, dapibus eget in, pharetra elit sed integer. Consectetur in facilisi laoreet libero. Ac a porttitor mauris sed aliquet ante eu tincidunt, ex at porttitor nostra a in a amet. Rhoncus lectus porttitor sed donec dapibus scelerisque vivamus, faucibus. Adipiscing imperdiet, et luctus purus commodo aliquet taciti, tempus ornare gravida. Id a tortor. Potenti nulla pellentesque montes vivamus nec eleifend egestas inceptos.
+This is an example for a citation using citeproc\footnote{cf. Doerrenberg and Peichl (\protect\hyperlink{ref-doerrenberg2013progressive}{2013}).}
+
+Lorem ipsum dolor sit amet, euismod etiam. Congue lorem curae lacus congue. Commodo, hendrerit euismod sed tortor nascetur condimentum at. Mollis torquent mauris nascetur. Maecenas risus donec cum magnis morbi et ipsum. Euismod pellentesque sociosqu ipsum dictumst nec tristique tincidunt elit ut. Tincidunt nisl odio aptent adipiscing. Varius, sed, felis ante vitae sit nullam augue elementum aptent. Est lacus netus torquent ut blandit tempor eleifend lacus. Facilisi, ante ornare id lacinia diam sit. Ex felis praesent laoreet sed nibh interdum justo. A nullam aliquam et lobortis, sed mi maximus ut augue. Felis quis natoque finibus erat curae elementum erat sit sapien pretium libero eget ac. Ridiculus ligula interdum consectetur, cras est, donec. Ut amet nibh augue nunc, vel elit sed magna cubilia lectus felis at. Quis ullamcorper vestibulum imperdiet amet, aliquam malesuada eros lorem integer, mattis. Egestas luctus condimentum ac facilisi tincidunt nulla, nec. Nec odio. Eu integer. Id ridiculus lectus magna. Sapien iaculis curabitur in integer ligula a ex nec vulputate! Orci ultrices in semper tellus primis vehicula ut neque. Turpis efficitur fermentum magna penatibus elementum in conubia nisl sociosqu. Non quam inceptos aliquam enim. Taciti luctus ligula, at convallis nullam nec pharetra lacinia phasellus sit eget. Ipsum non dapibus sollicitudin phasellus adipiscing auctor, donec arcu laoreet vulputate nisi. Sed ultrices dolor, lectus a eleifend sed. Lectus dapibus sed lectus sit diam libero vel volutpat. Elit lectus ac non dapibus, sed aenean, ultrices mauris erat. Nunc aliquam sed sed, non. Egestas ullamcorper eros ac fringilla ornare, a sodales faucibus ac. Et tellus penatibus facilisis pellentesque dictum. A litora. Amet at blandit amet sed, ut mauris. Nec suscipit. Diam est aliquet blandit nam luctus vulputate faucibus consequat, in! Eros cubilia maecenas natoque sed. Ad luctus viverra, ultrices aenean sed. Maximus cursus, id arcu eu libero nec ullamcorper. Commodo tortor, semper accumsan consequat pretium in quis amet. Blandit, donec velit nullam rhoncus vitae quis curabitur magnis orci, tempus orci nibh sollicitudin. Nisi aliquet sagittis. In felis vel sed augue auctor et ornare nisl ullamcorper et, class malesuada ut.
+
+\hypertarget{inst}{%
+\section{Instituional Background}\label{inst}}
+
+Lorem ipsum dolor sit amet, magna tincidunt quis tincidunt sed nec eu sed conubia arcu. Hendrerit amet tristique, id donec pellentesque vestibulum lacinia. Neque, bibendum varius nulla varius nulla. Et primis, pellentesque nulla eu fermentum, donec ut non, natoque. Ante, posuere interdum pellentesque vehicula adipiscing amet tempor suspendisse ut cursus. Est eu risus ridiculus vitae. Est curabitur convallis et non, nostra quis in, habitasse himenaeos quisque. Eros in egestas augue congue tempus. At mattis est in id. Sodales neque dictumst velit aenean iaculis, vel, primis, habitant viverra sed? Eu cras vel porta tempus nunc est aliquam curae ac donec. Nec diam egestas integer sem a ornare sed. Eros non eros in, neque aliquam duis. Vitae ut feugiat magna donec orci, sit et, nascetur, laoreet mus. Dui donec in felis. Nam at libero enim varius sit per, sed turpis, turpis id. Non nulla enim enim inceptos varius tortor molestie rhoncus orci turpis. Sed, quam amet viverra blandit vitae dictumst. Duis vel, nunc platea pellentesque lorem enim, nascetur himenaeos, nunc nec lorem eget non. Vitae urna eleifend rhoncus eu. Non ut aliquam arcu vulputate nec, nisi penatibus venenatis. Curae ipsum tempus et mauris. Hac vulputate, quis curabitur in eget. Luctus nisl sapien odio metus, amet aliquam nec fermentum nullam varius accumsan phasellus leo. Natoque libero aliquet adipiscing habitasse nascetur, cum nunc. Natoque vulputate vel vitae nam sed ad scelerisque feugiat. Erat nec ut dictum nulla et arcu egestas sapien arcu phasellus, lobortis curabitur hac. In in nullam ornare nisl euismod sociosqu class vitae pellentesque integer nulla. Nibh nulla eros a ut dui, vel porttitor egestas tortor. Sociis netus nibh sed gravida. Quam varius a maximus litora lorem. Feugiat, tellus sapien nullam sed. Leo consequat sed bibendum nulla nec. Duis gravida rutrum mattis consectetur nunc varius, quam potenti in et dis aptent malesuada. Et tellus at posuere, lobortis erat. Pharetra odio fermentum suspendisse rhoncus bibendum. Sapien arcu accumsan quis ad ultricies elementum orci condimentum aliquet. Nec risus purus, aptent congue felis sit ligula sit faucibus tincidunt interdum, netus. Ut facilisi ut ultrices. In euismod sit, sit in condimentum ac. Natoque ut eleifend libero tristique libero dui porta amet et fermentum venenatis malesuada. Ut, viverra, facilisi potenti non. Odio a, aenean consequat faucibus imperdiet eget blandit aliquam. Cras pellentesque curae sit egestas, nam nunc mus. Placerat mi eleifend sit, mi ac tellus praesent sed, est. Mauris in fermentum aptent. Vitae eget sed lacinia vel at lacinia est id risus. Dignissim in ipsum hac est sed magna. Ac dignissim tristique suspendisse sociosqu facilisi hac mollis himenaeos. Aliquet pulvinar dictum turpis ipsum placerat eu tincidunt sapien. Nibh lorem odio hendrerit maximus vel. Praesent adipiscing sollicitudin justo ac ipsum magna. Curabitur eu est laoreet vestibulum elit suspendisse. Est feugiat nam nunc in sed nam. Sem nulla, bibendum ad eget sed. Ridiculus dapibus ut elementum. Eu ligula orci interdum ridiculus aenean fusce habitant interdum vivamus. Lorem in enim sagittis primis, cubilia eros sem ultrices. Aliquam mauris ac in, sed.
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+Lorem ipsum dolor sit amet, volutpat, eget nam ac velit. Nulla sodales purus sit eu facilisis in, vestibulum risus. Vehicula, ac eu leo mi in magnis. Et nisl eu ridiculus lacinia. Sapien malesuada etiam posuere velit enim tellus ad sagittis. Curae nam metus fringilla proin pretium, montes volutpat pulvinar potenti. Scelerisque leo curabitur, curae mi, velit ac! Id turpis auctor vitae. Natoque a, auctor mi habitant, odio eros. Massa tortor adipiscing velit, in neque eleifend nec. Litora velit, elementum class, interdum mauris duis sit rhoncus cubilia sed! In mollis torquent, in nisl ut in sed et massa ridiculus est vel ipsum. Semper amet scelerisque nec sed sociis. Sed conubia ligula nunc condimentum eros himenaeos habitant. Enim magna libero ad diam sed turpis blandit velit rutrum in. Tempus eros consequat vel nec non arcu mauris semper porta. Maecenas pellentesque ut dictum, ultrices nibh suspendisse semper egestas faucibus sapien. Turpis parturient in sit quisque mauris tellus, sed tincidunt consectetur. Vulputate, aliquam, aliquet ut, aliquam praesent! Pellentesque a donec tristique pellentesque sed consectetur vel ipsum eget pretium, posuere. Sagittis odio libero blandit libero, nullam. Venenatis nostra cras viverra et. Magnis hac suscipit tempus netus torquent condimentum fusce nec varius sed metus. Porta augue ligula sed nulla ipsum. Libero porttitor, egestas, sit rhoncus. Mauris lacus, ac placerat suspendisse nisi mus. Sit sociosqu non aliquet, congue turpis mauris, montes. Nisi congue ut nullam pharetra suspendisse ut senectus ornare in magna. Vitae nibh malesuada, purus, suspendisse senectus vel eget eget fusce. Aliquet nostra nisl ad vitae ridiculus, sed posuere. Venenatis in dui sed a donec orci velit mauris. Lectus dapibus eu sem litora nunc. Penatibus ullamcorper dui, nascetur rutrum potenti porttitor ex enim. Eros, velit et quis tempor. Tortor amet, eu tempor. At dis, sed odio erat habitasse sit eget velit auctor conubia. Class maximus tincidunt luctus tempus, scelerisque etiam justo ac, maecenas sed purus faucibus. Vehicula velit curabitur nec. Vivamus velit gravida. Sed ac auctor velit justo, ut semper lobortis. Magnis convallis metus nibh ullamcorper mi condimentum vitae luctus fames. A rhoncus ante tincidunt nascetur sit purus cras tellus in tortor. Non quam ad ante nec. Sapien finibus at id faucibus? Elementum molestie nec! Vel, ipsum velit tellus adipiscing interdum taciti blandit. Sed venenatis tortor et id vulputate cursus maecenas.
+
+\hypertarget{strat}{%
+\section{Empirical Strategy}\label{strat}}
+
+\hypertarget{res}{%
+\section{Results}\label{res}}
+
+Lorem ipsum dolor sit amet, fusce odio duis curabitur vestibulum gravida sed turpis augue fames accumsan pellentesque sagittis. Ut mauris dapibus metus aliquet ut mollis dictum vehicula? Ut turpis risus ut, torquent amet nostra platea egestas erat sodales nec? Ac, ipsum molestie fames, purus taciti, magna. Erat mattis vel justo. Dapibus tincidunt porttitor nisl elit mauris cum. Malesuada curae at lectus ut. Fringilla leo, nec. Sit hendrerit elit enim nisl, orci non sit. Id lorem, sit sit. Semper blandit eu sit. Maximus neque, blandit dignissim amet. Habitasse lobortis, sed tortor sagittis. Ac mauris accumsan, sed vitae auctor ac senectus maximus? Dictumst justo. Justo amet rhoncus velit. Volutpat donec nullam inceptos praesent inceptos, ac. Nibh fusce rhoncus arcu convallis nec. Scelerisque vitae orci nam donec. Vestibulum odio, lobortis facilisis leo varius pulvinar sollicitudin pulvinar vel. Convallis tellus mauris porta curae in ac nostra maximus! Fames sit et mauris maecenas enim, ac. Sed tempus, vulputate, a quis ligula. Torquent malesuada lobortis erat, imperdiet conubia duis et. Pretium nunc platea, euismod in sit nec arcu sed nisl cubilia nibh vel accumsan. Elementum imperdiet ultricies. Ut amet felis posuere, congue lobortis, nam ut? At ut eros morbi ullamcorper metus sapien facilisi tempor. Sed sit penatibus. In sed morbi, venenatis eros vitae, mattis. Consequat montes amet. Magna nunc sem. Eros auctor, platea aenean nec tempus leo ante purus. Arcu, imperdiet consectetur auctor, suscipit vestibulum magnis commodo. Nibh porta dolor et augue pharetra, mollis phasellus ante, efficitur commodo enim litora amet. Etiam auctor pellentesque sagittis luctus dictum id elit magnis. Dolor hendrerit id egestas ut nulla amet libero. Nec nunc metus magna, tincidunt. A inceptos maximus, augue dui porttitor auctor. Praesent magna class potenti non a tortor ante venenatis, fames ridiculus. Purus vel per nec sit scelerisque sed. Eu suspendisse hendrerit auctor hendrerit non consequat. Per sem ac, nisi dui in nullam taciti nisi. Aliquam, augue mus, et ipsum in in suscipit ac vel morbi. Ut et amet integer enim. Inceptos orci eu dapibus vel a vitae ut eros in egestas. Semper nec sollicitudin nec ultrices ut metus. Mollis sit, risus suspendisse ut ligula felis. Aliquet, rhoncus hendrerit in ante sociis rhoncus platea, vitae tincidunt pharetra maximus vel morbi. Penatibus dui turpis auctor fusce magna enim pretium quam, egestas eros torquent. Id interdum turpis pellentesque erat quisque imperdiet eros nunc inceptos ex, nostra diam. In velit aliquam dolor taciti ut nibh dictum nec donec. Purus aenean lacinia, varius purus facilisis. Lacus cras sapien nulla et non magnis. Sociosqu condimentum est id condimentum et. Ut ut, ut a, tempus. Sed, pellentesque sed in enim? Dictumst aliquam nibh non adipiscing lectus. In ac eu diam massa, nisl nec metus eget erat magna.
+
+Example P
+
+\begin{figure}[H]
+
+{\centering \subfloat[First Graph\label{fig:unnamed-chunk-12-1}]{\includegraphics[width=0.5\linewidth]{01_Main_files/figure-latex/unnamed-chunk-12-1} }\subfloat[Second Graph\label{fig:unnamed-chunk-12-2}]{\includegraphics[width=0.5\linewidth]{01_Main_files/figure-latex/unnamed-chunk-12-2} }
+
+}
+
+\caption{Example Graph with subplots}\label{fig:unnamed-chunk-12}
+\end{figure}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+Lorem ipsum dolor sit amet, condimentum non non tincidunt non netus arcu habitant imperdiet id odio cursus. Interdum, conubia turpis sociosqu. Commodo leo tincidunt morbi, finibus. Lacus turpis primis nibh malesuada consectetur felis. Gravida nulla ipsum luctus felis est, curabitur. Cubilia id, arcu dapibus venenatis laoreet, nibh. Cursus ac justo nisl. Sapien eget eu imperdiet pellentesque, sit. Sapien, in amet purus lobortis bibendum. Eu nam mauris augue, suspendisse ac interdum vel pharetra ipsum nulla nostra. Auctor, sed quis proin, amet varius. Ad, fringilla est sed mi magnis hendrerit. Magnis parturient ut turpis sapien. Massa sodales a est, tincidunt mauris sed. Id sed suscipit. Phasellus varius maximus vestibulum ut odio ligula ipsum magna ante egestas. Tempor leo egestas et aliquam eget sit sed sollicitudin maximus interdum. Sed, tortor vitae, pellentesque aliquet felis. Ut nisi accumsan efficitur sit. Accumsan facilisi nec cubilia mauris risus, eget sed ligula, posuere, quisque etiam! Sed nullam, sit morbi sem enim eu dis iaculis, erat nullam. Eu eu malesuada natoque dapibus eu cum. Et eget, egestas sed suspendisse nec purus torquent. Cum odio sociis odio et lacus eleifend tincidunt nisl per dapibus. Nec risus vel, suscipit turpis. Vestibulum in at in ipsum velit risus a ultrices, convallis, nisi. Sit pharetra vel euismod pellentesque mi tellus risus vitae eros potenti. Tempus donec porttitor dictum proin ipsum conubia integer primis. Commodo, neque curae quam, donec porttitor nisi. Tortor finibus semper. Sed pulvinar morbi nisl eu risus nullam mi nibh lacus consequat. Sit nulla turpis sed lobortis at purus est pretium. Eu quam lobortis ultricies blandit aliquam ridiculus interdum ut sem sem. Aliquam dapibus sed sapien facilisi nec ex. Dapibus dolor, risus ligula eget ridiculus nam. Nec, quis amet sit nulla sed. Vitae commodo nisl at quis. Sed amet cursus ac sed duis lectus dapibus habitant, eget. Proin iaculis aliquam vitae cursus, bibendum scelerisque id tincidunt. A et dictumst eu, sed justo venenatis, est natoque, ornare ut senectus. Magnis ornare sollicitudin magna sed habitasse diam mauris posuere. Accumsan per natoque, non, vel libero feugiat, blandit eu sed. Posuere tellus tempus leo ex penatibus aliquam potenti quam eu. In nec hac aliquam suspendisse amet. Consequat, ut lobortis, tortor scelerisque sed. Ipsum penatibus a ut aliquam tempus vel non. Nascetur nec. Etiam ultricies nascetur nisl habitant accumsan odio. Ultricies, sed volutpat sed, lacus non. Sapien tellus mauris facilisis leo ex condimentum. Maecenas ante tristique, tincidunt dapibus. Orci velit risus vivamus nunc, commodo nec himenaeos. Et metus ipsum pharetra mauris morbi at. Molestie sociis mauris luctus. Tristique ac id imperdiet, ut rhoncus.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 \hypertarget{references}{%
 \section*{References}\label{references}}
 \addcontentsline{toc}{section}{References}
 
 \hypertarget{refs}{}
-\begin{CSLReferences}{0}{0}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-doerrenberg2013progressive}{}}%
+Doerrenberg, Philipp, and Andreas Peichl. 2013. {``Progressive Taxation and Tax Morale.''} \emph{Public Choice} 155 (3): 293--316.
+
 \end{CSLReferences}
 
 \clearpage
