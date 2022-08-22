@@ -43,3 +43,7 @@ knitr::opts_knit$set(
                    # If you want to work with relative paths and not get confused by anything, you might want to set this to your project directory every time
   )
 ```
+
+```{r, results='asis'}
+stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
+```
