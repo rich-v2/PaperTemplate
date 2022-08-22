@@ -129,7 +129,7 @@ The given label can then be referenced within your document using \@ref(label)
 
 ```
 
-# Instituional Background{#inst}
+# Institutional Background{#inst}
 
 ```{r knit-inst, child = './Markdown/03_InstitutionalBackground.Rmd'}
 
