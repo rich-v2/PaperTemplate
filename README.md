@@ -6,4 +6,8 @@ https://rmarkdown.rstudio.com/
 
 https://bookdown.org/yihui/rmarkdown/
 
+I recommend to use tinytex as LaTeX distribution, as missing packages will be installed on the fly.
+
+https://yihui.org/tinytex/
+
 Feel free to use and distribute. I hope it helps :-)
