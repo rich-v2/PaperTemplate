@@ -17,4 +17,4 @@ ols_reg_long <- lapply(rep("mpg ~ .",10),
                          res <- lm(as.formula(x),data=mtcars)
                        })
 
-save(ols_reg,file="./Data/analysis.Rdata")
+save(ols_reg,ols_reg_long,file="./Data/analysis.Rdata")
