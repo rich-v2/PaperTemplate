@@ -10,7 +10,10 @@ I recommend to use tinytex as LaTeX distribution, as missing packages will be in
 
 https://yihui.org/tinytex/
 
+Just run these two lines in your R console
+
 install.packages('tinytex')
+
 tinytex::install_tinytex()
 
 Feel free to use and distribute. I hope it helps :-)
