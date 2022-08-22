@@ -7,5 +7,6 @@ if (!require(pacman)){
 pacman::p_load(
   data.table,
   tidyverse,
-  modelsummary
+  modelsummary,
+  kableExtra
 )

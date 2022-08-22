@@ -45,7 +45,7 @@ knitr::opts_knit$set(
 ```
 
 ```{r, results='asis'}
-stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
+stringi::stri_rand_lipsum(2) %>% paste(collapse = " ") %>% cat()
 ```
 
 Example for a graph with subplots.
@@ -65,9 +65,28 @@ ggplot(mtcars, aes(factor(gear))) +
   theme_bw()
 ```
 
-Example for a regression table
-
-```{r example-table}
-msummary(ols_reg)
+```{r, results='asis'}
+stringi::stri_rand_lipsum(3) %>% paste(collapse = " ") %>% cat()
 ```
 
+Example for a regression table.
+
+```{r example-table}
+msummary(ols_reg,
+         title = "Example OLS Regression") %>% 
+  footnote("We can easily add all kinds of footnotes here.")
+```
+
+
+Example for long regression table.
+
+\afterpage{
+```{r example-tablelong}
+msummary(ols_reg_long,
+         title = "Example OLS Regression",
+         longtable=T) %>% 
+  footnote("We can easily add all kinds of footnotes here.") %>% 
+  kable_styling(latex_options = "repeat_header") %>% 
+  landscape()
+```
+}

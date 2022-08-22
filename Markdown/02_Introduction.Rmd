@@ -55,10 +55,9 @@ Cross-referencing across sections might not work, only if you knit the entire do
 
 -->
 
-This is an example for a citation using citeproc^[cf. @doerrenberg2013progressive.]
+This is an example for a citation using citeproc^[cf. @doerrenberg2013progressive.]. Example for referencing section \@ref(intro).
 
 ```{r, results='asis'}
-
-+stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
+stringi::stri_rand_lipsum(5) %>% paste(collapse = " ") %>% cat()
 ```
 

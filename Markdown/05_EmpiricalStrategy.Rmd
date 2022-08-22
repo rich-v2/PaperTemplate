@@ -44,3 +44,11 @@ knitr::opts_knit$set(
                    # If you want to work with relative paths and not get confused by anything, you might want to set this to your project directory every time
   )
 ```
+
+We can use LaTeX code at any point in our paper.
+
+\begin{equation}
+y_{it} = D_{it} + \alpha_i + \delta_t + \varepsilon_{it} (\#eq:fe-reg)
+\end{equation}
+
+Referencing equations like \@ref(eq:fe-reg) works similarly to LaTeX as well.

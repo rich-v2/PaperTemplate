@@ -30,19 +30,19 @@ header-includes:
 
 \newpage
 
-<!-- Regarding the YAML Header 
+<!-- Regarding the YAML Header (Stuff enclosed in '---' above)
 
-^This is how you comment in Rmarkdown btw. Use Ctr + Shift + C on a selection to comment out.
+^This is how you comment in Rmarkdown btw. Use Ctrl + Shift + C on a selection to comment out.
 
 There are more fields you can use to adjust certain aspects of the paper. For me, the ones specified sufficed.
 
-Note that the YAML (language?) is quite sensitive to indentations. Don't start a new line for no reason and make sure that nested key:value pairs are correctly aligned.
+Note that YAML is quite sensitive to indentations. Don't start a new line for no reason and make sure that nested key:value pairs are correctly aligned.
 
 For a paper I use the bookdown package and the pdf_document2 document format, as it allows me to cross-reference figures and tables, which is not a feature of default rmarkdown.
 
-For knitting, I also use the tinytex package, worked better for me than the default LaTeX distribution. Might not be the same experience for you, but I read somewhere that it was highly recommended.
+For knitting, I also use the tinytex package, which worked better for me than the default LaTeX distribution. Might not be the same experience for you, but I read somewhere that it is highly recommended (couldn't be bothered to look for the source).
 
-Bibliography file should be a bib file like you would use with biber LaTeX.
+Bibliography file should be a bib file like you would use with biber LaTeX. Some bibliography software, e.g., Zotero, allows for direct link between R-Project and Zotero library, however, in order to accommodate different software, I implemented citations like this.
 
 extra_dependencies: List type value where you just give the names of the additional LaTeX packages you would like to use. I haven't checked which ones pandoc or whoever runs this in the background includes some of them already by default, some might be reduntant, some you may not need. Adjust at your own discretion.
 
@@ -95,6 +95,13 @@ One approach to this end is to add additional booleans for conditional code exec
 analysis <- T
 ```
 
+<!-- "Globals" 
+
+You might want to write external scripts or packages for common functions you define for several parts of your paper.
+
+If you want to knit subparts of your paper, you generally might not want to run the main file but only the child rmd on it's own.
+
+-->
 
 <!-- Load Libraries -->
 
@@ -109,6 +116,13 @@ source("./Scripts/functions.R")
 ```
 
 
+<!-- Headers 
+
+Headers are defined as # <HEADER>6{#<LABEL>}
+
+The given label can then be referenced within your document using \@ref(label)
+
+-->
 # Introduction{#intro}
 
 ```{r knit-intro, child = './Markdown/02_Introduction.Rmd'}
@@ -171,12 +185,27 @@ if(!analysis){
 
 <!-- References
 
+Specifying the label as '-' for a section turns off the enumeration, which is especially helpful for references.
+
+By default, Rmarkdown/pandoc/whoever will add the list of references as the last part of the paper. If the references are to be followed by an appendix, Rmarkdown needs to be told to add the references before that. There are probably several ways of doing that, one would be to use HTML tags (works irrespective of the chosen output format).
 
 -->
 
 <div id="refs"></div>
 
 \clearpage
+
+<!-- Appendices 
+
+Bookdown has an extension that allows you to easily add appendices to your paper. You just need to include the line # (APPENDIX) Appendix {-} which indicates that all sections following will be appendix sections.
+
+The numbering style will automatically be changed to A, A.1, B, B.1, etc., however, the numbering of tables and figures will remain unchanged, which might be an undesired feature. Hence, I added the following code I found to the YAML header:
+
+\newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{A\arabic{table}}     \setcounter{figure}{0} \renewcommand{\thefigure}{A\arabic{figure}}}
+
+This restarts the counters on figures and tables and adds the letter A for appendix. If you have several appendices, you might want to figure out a different approach that automatically detects the letter of the appendix section.
+
+-->
 
 # (APPENDIX) Appendix {-}
 
