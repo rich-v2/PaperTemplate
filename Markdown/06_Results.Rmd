@@ -48,7 +48,7 @@ knitr::opts_knit$set(
 stringi::stri_rand_lipsum(2) %>% paste(collapse = " ") %>% cat()
 ```
 
-Example for a graph with subplots.
+Example for a graph with subplots see Figure \@ref(fig:example-plot).
 
 ```{r example-plot, fig.cap = "Example Graph with subplots", fig.subcap=c("First Graph","Second Graph"), fig.ncol=2, out.width="50%"}
 ggplot(mtcars, aes(mpg,disp,color=factor(cyl))) +
@@ -69,7 +69,7 @@ ggplot(mtcars, aes(factor(gear))) +
 stringi::stri_rand_lipsum(3) %>% paste(collapse = " ") %>% cat()
 ```
 
-Example for a regression table.
+Example for a regression table see Table \@ref(tab:example-table).
 
 ```{r example-table}
 msummary(ols_reg,
@@ -78,7 +78,9 @@ msummary(ols_reg,
 ```
 
 
-Example for long regression table.
+We can use inline code to reference results stored in R objects like the coefficient estimate `r round(ols_reg[[1]]$coefficients["disp"],3)`.
+
+Example for long regression table see Table \@ref(tab:example-tablelong).
 
 \afterpage{
 ```{r example-tablelong}

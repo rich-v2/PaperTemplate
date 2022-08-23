@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.22)  22 AUG 2022 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.22)  23 AUG 2022 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,12 +684,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 161.
 [2] [3] [4]
-<01_Main_files/figure-latex/example-plot-1.pdf, id=87, 469.755pt x 325.215pt>
+<01_Main_files/figure-latex/example-plot-1.pdf, id=88, 469.755pt x 325.215pt>
 File: 01_Main_files/figure-latex/example-plot-1.pdf Graphic file (type pdf)
 <use 01_Main_files/figure-latex/example-plot-1.pdf>
 Package pdftex.def Info: 01_Main_files/figure-latex/example-plot-1.pdf  used on input line 195.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<01_Main_files/figure-latex/example-plot-2.pdf, id=88, 469.755pt x 325.215pt>
+<01_Main_files/figure-latex/example-plot-2.pdf, id=89, 469.755pt x 325.215pt>
 File: 01_Main_files/figure-latex/example-plot-2.pdf Graphic file (type pdf)
 <use 01_Main_files/figure-latex/example-plot-2.pdf>
 Package pdftex.def Info: 01_Main_files/figure-latex/example-plot-2.pdf  used on input line 195.
@@ -710,16 +710,16 @@ Overfull \hbox (7.83205pt too wide) in paragraph at lines 195--196
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `01_Main.out' has not changed.
-(rerunfilecheck)             Checksum: 78F336D62087A2ED88085433B4088806;1019.
+(rerunfilecheck)             Checksum: B655774CBD579244846BE66C7EDA9423;1024.
  ) 
 Here is how much of TeX's memory you used:
  17836 strings out of 479638
  333434 string characters out of 5876438
- 663812 words of memory out of 5000000
+ 664813 words of memory out of 5000000
  36035 multiletter control sequences out of 15000+600000
  537360 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,77p,3717b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,77p,3558b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
 
@@ -730,10 +730,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/Richard Winter/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on 01_Main.pdf (11 pages, 239826 bytes).
+Output written on 01_Main.pdf (11 pages, 240765 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  42 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
